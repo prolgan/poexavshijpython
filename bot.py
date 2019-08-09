@@ -189,4 +189,4 @@ async def weather(ctx):
 
 token = os.environ.get('BOT_TOKEN')
 
-bot.run(str(token))
+Bot.run(str(token))
