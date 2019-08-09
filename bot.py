@@ -187,6 +187,7 @@ async def weather(ctx):
 	await ctx.send("Температра сейчас в районе " + str(temp) + degree_sign + "c")
 
 
+#token = os.environ.get('BOT_TOKEN')
 token = os.environ.get('BOT_TOKEN')
 
 Bot.run(str(token))
