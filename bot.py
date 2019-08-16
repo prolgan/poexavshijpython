@@ -14,6 +14,7 @@ Bot = commands.Bot(command_prefix= "!")
 @Bot.event
 async def on_ready():
 	print("Мое уважение")
+	await Bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="на даунов"))
 
 
 @Bot.command()
