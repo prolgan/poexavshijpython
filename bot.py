@@ -60,6 +60,44 @@ async def pika(ctx):
     await ctx.send(file=discord.File('images/pika.jpg'))
     await ctx.message.delete()
 
+@Bot.command()
+async def kto(ctx):
+    await ctx.send(file=discord.File('images/kto.jpg'))
+    await ctx.message.delete()
+
+
+@Bot.command()
+async def tea(ctx):
+    await ctx.send("https://www.youtube.com/watch?v=iPbAg2En_HY")
+    await ctx.message.delete()
+
+@Bot.command()
+async def pidor(ctx):
+    z = rand.randint(1,2)
+    if(z == 1):
+        await ctx.send("Пидор обнаружен!")
+    else:
+        await ctx.send("ОПА долбаеб!")
+    await ctx.message.delete()
+
+
+@Bot.command()
+async def cube(ctx):
+    z = rand.randint(1,6)
+    if z == 1:
+        await ctx.send(file=discord.File('cubs/cub1.png'))
+    elif z == 2:
+        await ctx.send(file=discord.File('cubs/cub2.png'))
+    elif z == 3:
+        await ctx.send(file=discord.File('cubs/cub3.png'))
+    elif z == 4:
+        await ctx.send(file=discord.File('cubs/cub4.png'))
+    elif z == 5:
+        await ctx.send(file=discord.File('cubs/cub5.png'))
+    else:
+        await ctx.send(file=discord.File('cubs/cub6.png'))
+    await ctx.message.delete()
+
 
 #21
 @Bot.command()
@@ -68,119 +106,123 @@ async def cards_roll(ctx):
     if z == 1:
         x = rand.randint(1,13)
         if x == 1:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_001.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_001.jpg'))
         elif x == 2:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_002.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_002.jpg'))
         elif x == 3:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_003.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_003.jpg'))
         elif x == 4:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_004.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_004.jpg'))
         elif x == 5:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_005.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_005.jpg'))
         elif x == 6:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_006.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_006.jpg'))
         elif x == 7:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_007.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_007.jpg'))
         elif x == 8:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_008.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_008.jpg'))
         elif x == 9:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_009.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_009.jpg'))
         elif x == 10:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_010.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_010.jpg'))
         elif x == 11:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_011.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_011.jpg'))
         elif x == 12:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_012.jpg'))
+            await ctx.send(file=discord.File('cards/clubs/image_part_012.jpg'))
         else:
-            await ctx.author.send(file=discord.File('cards/clubs/image_part_013.jpg'))        
+            await ctx.send(file=discord.File('cards/clubs/image_part_013.jpg'))        
     elif z == 2:
         x = rand.randint(1,13)
         if x == 1:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_001.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_001.jpg'))
         elif x == 2:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_002.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_002.jpg'))
         elif x == 3:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_003.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_003.jpg'))
         elif x == 4:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_004.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_004.jpg'))
         elif x == 5:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_005.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_005.jpg'))
         elif x == 6:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_006.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_006.jpg'))
         elif x == 7:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_007.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_007.jpg'))
         elif x == 8:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_008.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_008.jpg'))
         elif x == 9:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_009.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_009.jpg'))
         elif x == 10:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_010.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_010.jpg'))
         elif x == 11:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_011.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_011.jpg'))
         elif x == 12:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_012.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_012.jpg'))
         else:
-            await ctx.author.send(file=discord.File('cards/diamonds/image_part_013.jpg'))
+            await ctx.send(file=discord.File('cards/diamonds/image_part_013.jpg'))
     elif z == 3:
         x = rand.randint(1,13)
         if x == 1:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_001.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_001.jpg'))
         elif x == 2:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_002.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_002.jpg'))
         elif x == 3:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_003.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_003.jpg'))
         elif x == 4:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_004.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_004.jpg'))
         elif x == 5:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_005.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_005.jpg'))
         elif x == 6:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_006.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_006.jpg'))
         elif x == 7:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_007.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_007.jpg'))
         elif x == 8:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_008.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_008.jpg'))
         elif x == 9:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_009.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_009.jpg'))
         elif x == 10:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_010.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_010.jpg'))
         elif x == 11:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_011.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_011.jpg'))
         elif x == 12:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_012.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_012.jpg'))
         else:
-            await ctx.author.send(file=discord.File('cards/spades/image_part_013.jpg'))
+            await ctx.send(file=discord.File('cards/spades/image_part_013.jpg'))
     elif z == 4:
         x = rand.randint(1,13)
         if x == 1:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_001.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_001.jpg'))
         elif x == 2:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_002.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_002.jpg'))
         elif x == 3:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_003.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_003.jpg'))
         elif x == 4:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_004.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_004.jpg'))
         elif x == 5:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_005.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_005.jpg'))
         elif x == 6:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_006.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_006.jpg'))
         elif x == 7:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_007.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_007.jpg'))
         elif x == 8:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_008.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_008.jpg'))
         elif x == 9:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_009.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_009.jpg'))
         elif x == 10:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_010.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_010.jpg'))
         elif x == 11:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_011.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_011.jpg'))
         elif x == 12:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_012.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_012.jpg'))
         else:
-            await ctx.author.send(file=discord.File('cards/hearts/image_part_013.jpg'))
+            await ctx.send(file=discord.File('cards/hearts/image_part_013.jpg'))
     else:
         await ctx.send("Если что это баг")    
-    #await ctx.author.send(file=discord.File('images/pika.jpg'))
+    #await ctx.send(file=discord.File('images/pika.jpg'))
     #await ctx.message.delete()
+
+
+
+
 
 
 
@@ -203,6 +245,7 @@ async def random(ctx, content):
 async def r(ctx, content):
     line = ctx.message.content.split(' ')[1:]
     a = line[0]
+
     if a == "help":
         await ctx.send(file=discord.File('images/ricardo/help.png'))
     elif a == "ACCH":
@@ -316,7 +359,6 @@ async def weather(ctx):
 
 
 token = os.environ.get('BOT_TOKEN')
-
 
 
 Bot.run(str(token))
