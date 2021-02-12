@@ -9,7 +9,7 @@ import os
 
 import json
 
-owm = pyowm.OWM('2e8e40308212b73167bdd6a4c8dd3b32', language = "ru")
+owm = pyowm.OWM('2e8e40308212b73167bdd6a4c8dd3b32')
 
 Bot = commands.Bot(command_prefix= "!")
 
@@ -358,7 +358,7 @@ async def weather(ctx):
     await ctx.send("Температра сейчас в районе " + str(temp) + degree_sign + "c")
 
 
-token = os.environ.get('BOT_TOKEN')
 
 
-Bot.run(str(token))
+
+Bot.run('NTk0NTc3MDkwODgwMzQwMDkz.XRedEQ.W2pBGGldKZajz0Ux2qHTVw3FsBY')
